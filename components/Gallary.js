@@ -169,9 +169,9 @@ export default function Gallery() {
 
         <div className="flex gap-4 scroll-smooth overflow-hidden w-full" ref={scrollRef}>
           {images.map((img, i) => (
-            <div className="relative flex justify-center items-center p-2">
+            <div key={i} className="relative flex justify-center items-center p-2">
               <motion.img
-                key={i}
+                // key={i}
                 src={img}
                 alt={`gallery-${i}`}
                 className="h-[171px] w-[175px] rounded-3xl object-cover shrink-0 cursor-pointer

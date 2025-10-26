@@ -11,6 +11,7 @@ export default function Tabs() {
     "About Me": [`Hello! I’m Tarun, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
 `, `
 I was born and raised in Albany,
+ NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my twin daughters – Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9–10 AM.
  NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my twin daughters – Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9–10 AM.`],
     Experiences: [`Flynt social and s7works`, ""],
     Recommended: [`Hire me`, ""],
@@ -75,7 +76,7 @@ I was born and raised in Albany,
           />
         </div>
 
-        <div className=" w-[611px] min-h-[175px] overflow-hidden relative">
+        <div className=" w-[611px] mb-5 min-h-[175px] overflow-hidden relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -83,7 +84,7 @@ I was born and raised in Albany,
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -40 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="font-jakarta overflow-x-hidden overflow-y-auto
+              className="font-jakarta overflow-x-hidden overflow-y-auto 
                 max-h-[175px] font-normal text-[20px] leading-[100%] tracking-[0] text-[#969696]
                 [&::-webkit-scrollbar]:w-4
                 [&::-webkit-scrollbar]:h-4
