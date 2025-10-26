@@ -8,8 +8,10 @@ Responsive layout
 
 By Tarun
 
+link "https://lunacal-assignment-tarun.vercel.app/"
+
 # Clone the repository
-git clone <repo>
+git clone https://github.com/tarunkumarkushwaha/lunacal_assignment_tarun
 
 # Navigate to the project folder
 cd your-project-name(Lunacal assignment tarun)

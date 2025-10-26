@@ -167,31 +167,32 @@ export default function Gallery() {
         </div>
 
 
-        {/* <div className="relative"> */}
-        <div className="flex gap-4 scroll-smooth overflow-hidden w-full"
-          ref={scrollRef}>
+        <div className="flex gap-4 scroll-smooth overflow-hidden w-full" ref={scrollRef}>
           {images.map((img, i) => (
-            <motion.img
-              key={i}
-              src={img}
-              alt={`gallery-${i}`}
-              className="h-[179px] w-[190px] overflow-visible rounded-xl object-cover shrink-0 cursor-pointer
-                       shadow-[0_4px_15px_rgba(0,0,0,0.3)]"
-              whileHover={{
-                scale: 1.07,
-                rotate: 1.5,
-                filter: "sepia(1) hue-rotate(180deg) brightness(1.15)",
-                boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.4)",
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 200,
-                damping: 15,
-              }}
-            />
+            <div className="relative flex justify-center items-center p-2">
+              <motion.img
+                key={i}
+                src={img}
+                alt={`gallery-${i}`}
+                className="h-[171px] w-[175px] rounded-3xl object-cover shrink-0 cursor-pointer
+                   shadow-[0_4px_15px_rgba(0,0,0,0.3)]"
+                whileHover={{
+                  scale: 1.07,
+                  rotate: -3,
+                  filter: "sepia(1) hue-rotate(180deg) brightness(1.15)",
+                  boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.4)",
+                  zIndex: 10,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 15,
+                }}
+              />
+            </div>
           ))}
         </div>
-        {/* </div> */}
+
       </div>
     </div>
   );
